@@ -1,28 +1,49 @@
-\section{Research Methodology}
-\label{sec:Res}
-\par This section is one of the most important parts of your research and it is the one that will receive most criticism. The reason is that here you document how you conducted your research. Since you are reading a B.Sc. degree you are expected to follow a scientific method, thus in this section you are expected to document: \textbf{the problem}; \textbf{hypothesis}; \textbf{aim \& objectives}; \textbf{research questions}; and \textbf{research pipeline}. Let's go through each.
+\section{Reflection on Chosen Methodology}
+\subsection{Research Question}
+To critically assess the prevailing paradigms within Intelligent Transportation Systems (ITS), this research is guided by the following principal research question:
+\begin{itemize}
+    \item How much does a vision-based speed estimation model that uses Region of Interest (ROI) Dense Optical Flow and dynamic affine calibration vary in accuracy compared to regular GPS probe data when checked against high-quality ground truth in urban driving situations?
+\end{itemize}
 
-\par First start by providing a brief overview of the problem, similar to what you already mentioned in the previous sections. Then provide a hypothesis, this is the assumption you are making, which via your research you are attempting to prove or disprove. An example hypothesis in traffic management would be: \textit{By using image processing on public camera video feeds we believe that it is possible to estimate the traffic congestion at a higher precision than public traffic data feeds.}
-
-\par After explaining the problem and hypothesis you need to specify why you are doing this research and what you think the output will be, so the aim \& objectives. Let us consider the \enquote{Marine Vessel Tracking} concept: \textit{With this research we aim to be able to automatically detect any anomalies within Marine traffic, such as drug smuggling, human trafficking and/or collisions.} Our objectives are:
+\subsection{Research Objectives}
+To carefully tackle the research question, the following tasks need to be done:
 \begin{enumerate}
-    \item Identify existing data sets and manners of connecting them or even enriching them.
-    \item Review existing algorithms and propose a suitable model
-    \item Evaluate the effectiveness of the proposed model with real data and existing research.
+    \item \textbf{Build a Prototype:} Create a vision-based system using Python and OpenCV to work out how fast a vehicle is going from 2D dashcam footage. This involves measuring how much pixels move around with Dense Optical Flow (using the Farnebäck method) and then scaling that up with a reliable affine calibration model.
+    \item \textbf{Extract secondary data:} Obtain and analyse the corresponding continuous GPS trajectory data pertinent to the identical traffic scenarios.
+    \item \textbf{Carry out an experimental evaluation:} Compare both the vision and GPS estimates to a really accurate baseline (the CAN-bus data from the comma2k19 dataset) using common error metrics like Mean Absolute Error (MAE) and Root Mean Square Error (RMSE).
+    \item \textbf{Identify Limitations:} Analyse the environmental or systemic variables, such as visual noise, computational latency, or GPS multipath errors, that compromise the performance of each respective technology.
 \end{enumerate}
 
-\par So lastly you have to present a number of research questions that you attempt to answer, which ideally revolve around the \textbf{data set}, \textbf{algorithm} and \textbf{evaluation} which you documented in your literature review:
-\begin{enumerate}
-    \item Does a data set need to be created for such a research?
-    \item Which current technology is best suited to address the problem?
-    \item How does the proposed solution compare with existing solutions?
-\end{enumerate}
+\subsection{Research Philosophies, Approaches and Paradigms}
+Showing an early grasp of research ideas, this study sticks to a strict positivist way of thinking. Speed and how pixels move are straightforward, measurable things that exist outside of what people interpret. 
 
-\par Finally, you need a plan on how you intend to answer the research questions which will help you prove/disprove the hypothesis. Different research areas would require specific pipelines, yet a generic one is shown in Fig~\ref{fig:Pipeline}. After presenting an illustration of your pipeline it is recommended to documenting what has been done at every stage. Remember you should use past tense in this section since you are document what you have already done, since this paper will be published at the end of your research.
+Hence, the research employs a deductive approach; it commences with established physical and computational theories relating to optical flow, expresses a hypothesis concerning its accuracy in comparison to satellite positioning, and subsequently tests this hypothesis through demanding mathematical analysis. In Saunders' Research Onion model, this lines up with a single-method quantitative approach since the assessment is entirely based on numerical data, not on any qualitative themes.
 
-\begin{figure}[ht]
-    \includegraphics[scale=0.25]{includes/pipeline.png}
-    \centering
-    \caption{Research Pipeline}
-    \label{fig:Pipeline}
-\end{figure}
+\subsection{Chosen Methodology}
+Following a comprehensive review of the existing literature, an experimental quantitative methodology was chosen. To really assess ITS sensors, you need solid, measurable benchmarks. While just a theoretical method might work for software structures, testing real-world sensor perception calls for a hands-on, experimental setup. 
+
+By testing a customised optical flow vision prototype against real-world GPS data, this methodology directly addresses the knowledge gap identified in prior literature concerning the comparative accuracy of these systems within dynamic urban environments.
+
+\subsection{Experiment Design and Method of Analysis}
+The testing strategy centres on a controlled, secondary-data experiment utilising the comma2k19 open-source dataset, which inherently offers synchronised video recordings, consumer-grade GPS, and highly precise CAN-bus ground truth.
+
+To validate the hypothesis, these experimental variables are strictly defined:
+\begin{itemize}
+    \item \textbf{Independent Variables:} The algorithmic tuning parameters within the vision model, specifically the optical flow percentile thresholds, calibration window lengths, and exponential moving average parameters, as well as the environmental conditions present in the selected video segments, including factors such as lighting and traffic density.
+    \item \textbf{Dependent Variables:} The calculated instantaneous velocity (measured in kilometres per hour) generated by both the visual prototype and the GPS sensor, along with the corresponding error margins.
+    \item \textbf{Control/Ground Truth Variable:} The actual speed of the vehicle, accurately recorded via the CAN-bus data at a frequency of 100Hz.
+\end{itemize}
+
+\textbf{Method of Analysis:} The vision algorithm goes through the video's frames in the dataset, focusing on a particular area of the road (the ROI) to figure out a main proxy for forward movement. This proxy is then scaled up or down to give a speed array. The speed array lines up in time with the GPS speed data. For the main stats, we use some Python scripts to work out the Root Mean Square Error (RMSE), Mean Absolute Error (MAE), and how the errors trend over time for both systems compared to the CAN-bus ground truth.
+
+\subsection{Reflections on Validity, Reliability, and Generalisability}
+\begin{itemize}
+    \item \textbf{Validity:} The construct validity is solid since the measurement is based on tracking pixel intensity changes over time using Optical Flow. Internal validity is also reliable because we’ve used the comma2k19 dataset, which gives perfectly synchronized timestamps for the video, GPS, and CAN-bus data. This means all the systems are tested under the same physical conditions.
+    \item \textbf{Reliability:} Since the prototype is built on code, it's dependable. If the Python script runs the same video clip again, the way the Farnebäck algorithm and calibration stuff work means you'll get the same numbers every time.
+    \item \textbf{Generalisability (Transferability):} The main issue with this research is how well it can be applied elsewhere. Since the testing is done using pre-recorded data (mostly shot on Californian highways and city streets), the results might not hold up in harsh weather (like heavy snow, which messes with optical flow) or on unstructured rural roads unless we specifically look at data from those situations.
+\end{itemize}
+
+\subsection{Ethical Considerations}
+Since this research uses a quantitative, system-based approach and doesn't involve interacting with people, the ethical risks are low. Still, the main ethical concerns are around how we handle data privacy and secondary data usage. The comma2k19 dataset is open-source and OK for academic research. 
+
+If the project produces visual outputs like videos showing optical flow vectors, we need to be careful and anonymise any identifiable info. Any license plates or pedestrian faces that are clearly visible in the dataset clips should be blurred before publication to respect people's privacy.

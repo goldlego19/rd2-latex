@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.3.5)  6 APR 2026 12:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.3.5)  6 APR 2026 15:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -320,7 +320,7 @@ Package hyperref Info: Link coloring OFF on input line 10.
 \openout3 = `main.out'.
 
  (includes/02-Introduction.tex
-<includes/researchonion.jpg, id=64, 1027.84pt x 734.745pt>
+<includes/researchonion.jpg, id=96, 1027.84pt x 734.745pt>
 File: includes/researchonion.jpg Graphic file (type jpg)
 <use includes/researchonion.jpg>
 Package pdftex.def Info: includes/researchonion.jpg  used on input line 9.
@@ -334,7 +334,7 @@ Overfull \hbox (4.95937pt too wide) in paragraph at lines 9--10
 
 
  <./includes/researchonion.jpg>]) (includes/03-Literature.tex
-<includes/literaturemap.png, id=81, 1684.96167pt x 829.76666pt>
+<includes/literaturemap.png, id=113, 1684.96167pt x 829.76666pt>
 File: includes/literaturemap.png Graphic file (type png)
 <use includes/literaturemap.png>
 Package pdftex.def Info: includes/literaturemap.png  used on input line 5.
@@ -344,14 +344,22 @@ Underfull \hbox (badness 2142) in paragraph at lines 39--40
 []\OT1/ptm/m/n/10 Additionally [[]7[]] of-fer a highly per-ti-nent com-par-a-tive
  []
 
+) (includes/04-Methodology.tex
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 5.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 5.
+ [3]
+Underfull \hbox (badness 4531) in paragraph at lines 28--29
+\OT1/ptm/m/n/10 which in-her-ently of-fers syn-chro-nised video record-ings,
+ []
+
 ) (main.bbl
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 29.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 29.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 29.
-)
+ [4])
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -363,26 +371,28 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[3] (main.aux)
+[5
+
+] (main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 026DDBF09834E11F6BAC67CC0BBC5218;3074.
+(rerunfilecheck)             Checksum: 593B3686144A8AECE98C560C6E516EFA;4852.
  ) 
 Here is how much of TeX's memory you used:
- 10216 strings out of 467871
- 165825 string characters out of 5418377
- 605434 words of memory out of 5000000
- 38961 multiletter control sequences out of 15000+600000
- 657844 words of font info for 93 fonts, out of 8000000 for 9000
+ 10253 strings out of 467871
+ 166534 string characters out of 5418377
+ 603437 words of memory out of 5000000
+ 38980 multiletter control sequences out of 15000+600000
+ 658951 words of font info for 94 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 75i,8n,79p,1508b,492s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/gremb/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/gremb/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (3 pages, 338785 bytes).
+ 75i,8n,79p,1508b,636s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/gremb/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/gremb/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/gremb/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/gremb/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (5 pages, 373639 bytes).
 PDF statistics:
- 137 PDF objects out of 1000 (max. 8388607)
- 31 named destinations out of 1000 (max. 500000)
- 123 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 195 PDF objects out of 1000 (max. 8388607)
+ 45 named destinations out of 1000 (max. 500000)
+ 187 words of extra memory for PDF output out of 10000 (max. 10000000)
 

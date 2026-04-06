@@ -186,6 +186,13 @@ INPUT .\includes\literaturemap.png
 INPUT .\includes\literaturemap.png
 INPUT .\includes\literaturemap.png
 INPUT .\includes\literaturemap.png
+INPUT .\includes\04-Methodology.tex
+INPUT .\includes\04-Methodology.tex
+INPUT .\includes\04-Methodology.tex
+INPUT .\includes\04-Methodology.tex
+INPUT includes\04-Methodology.tex
+INPUT C:\Users\gremb\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmb7t.vf
+INPUT C:\Users\gremb\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
 INPUT .\main.bbl
 INPUT .\main.bbl
 INPUT main.bbl
@@ -200,6 +207,10 @@ INPUT C:\Users\gremb\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmri8r
 INPUT main.aux
 INPUT .\main.out
 INPUT .\main.out
+INPUT C:\Users\gremb\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy7.pfb
+INPUT C:\Users\gremb\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy7.pfb
+INPUT C:\Users\gremb\AppData\Local\Programs\MiKTeX\fonts\type1\urw\times\utmb8a.pfb
+INPUT C:\Users\gremb\AppData\Local\Programs\MiKTeX\fonts\type1\urw\times\utmb8a.pfb
 INPUT C:\Users\gremb\AppData\Local\Programs\MiKTeX\fonts\type1\urw\times\utmr8a.pfb
 INPUT C:\Users\gremb\AppData\Local\Programs\MiKTeX\fonts\type1\urw\times\utmr8a.pfb
 INPUT C:\Users\gremb\AppData\Local\Programs\MiKTeX\fonts\type1\urw\times\utmri8a.pfb
