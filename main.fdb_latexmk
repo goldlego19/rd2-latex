@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1775467352.05881 "main.aux" "main.bbl" "main" 1775467353.37716 0
+["bibtex main"] 1775469821.52533 "main.aux" "main.bbl" "main" 1775469824.49151 0
   "./sources.bib" 1775467236 2666 08f477013c65020a6c6d85e9649036d7 ""
   "C:/Users/gremb/AppData/Local/Programs/MiKTeX/bibtex/bst/ieeetran/IEEEtran.bst" 1440622569 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "main.aux" 1775467352 3175 b6eafa9348195e309b6563cebff95b81 "pdflatex"
+  "main.aux" 1775469823 3365 3c7bdd496ba73ded971a8f563c7746ad "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1775467352.28297 "c:/Users/gremb/Desktop/School/lvl6/lvl3/Sem 2/rd2/main.tex" "main.pdf" "main" 1775467353.37773 0
+["pdflatex"] 1775469821.91719 "c:/Users/gremb/Desktop/School/lvl6/lvl3/Sem 2/rd2/main.tex" "main.pdf" "main" 1775469824.49332 0
   "C:/Users/gremb/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1773733950 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/gremb/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1772707310 13333486 9cd439619891a87ae0b71c4eb059e278 ""
   "C:/Users/gremb/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -73,11 +73,12 @@
   "C:/Users/gremb/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "c:/Users/gremb/Desktop/School/lvl6/lvl3/Sem 2/rd2/main.tex" 1775467256 1450 b88be425a02f58a1401270248e6dd9c9 ""
   "includes/02-Introduction.tex" 1772709167 4713 471925ccfdc383d26e47908c0cf21f78 ""
-  "includes/03-Literature.tex" 1775467350 8531 3488948491bc39094593d3f73b0a9f5f ""
+  "includes/03-Literature.tex" 1775469818 8785 99855c2f54eefd9f2b3bb5bff5589b9e ""
+  "includes/literaturemap.png" 1775469620 317067 0a598e8b74174cf8af7fcdcb30209a64 ""
   "includes/researchonion.jpg" 1772634890 81608 0673640718ba59620ff4057e3faa162c ""
-  "main.aux" 1775467352 3175 b6eafa9348195e309b6563cebff95b81 "pdflatex"
-  "main.bbl" 1775467352 4096 da02f67dded84946b389605bbceba2c9 "bibtex main"
-  "main.out" 1775467352 3074 026ddbf09834e11f6bac67cc0bbc5218 "pdflatex"
+  "main.aux" 1775469823 3365 3c7bdd496ba73ded971a8f563c7746ad "pdflatex"
+  "main.bbl" 1775469821 4096 da02f67dded84946b389605bbceba2c9 "bibtex main"
+  "main.out" 1775469823 3074 026ddbf09834e11f6bac67cc0bbc5218 "pdflatex"
   "main.tex" 1775467256 1450 b88be425a02f58a1401270248e6dd9c9 ""
   (generated)
   "main.aux"
