@@ -1,116 +1,46 @@
-\section{Literature Review}
-\label{sec:Lit}
-\par Give a \textbf{brief} overview of the theme, history and facts. You should use the present tense since what you are documenting is current knowledge. Do not dedicate a lot to historical facts about the subject matter, but limit to a paragraph. Make sure you quantify by quoting statistics where relevant. Following is an example for a research in \enquote{Automatic cyber-bullying detection}: \textit{With the popularity of social media, predominantly amongst the adolescent and young adult generations, there appears to be a correlation between the increase in suicide rates and social networking adoption~\cite{miron2019suicide}, with suicide attempts increasing by 10\% amongst adolescents and by 5.6\% amongst young adults for the period 2013-2017.} 
+\section{Review of research methodology}
+In the field of Intelligent Transportation Systems (ITS), the selected methodology fundamentally determines the accuracy of speed estimation. Looking into this research area, you can spot two main methods. Researchers focusing on vision-based speed estimation usually take an experimental, deductive approach based on positivism. Their methods generally entails the collection of primary data through edge-computing cameras, utilising geometric transformations (such as Inverse Perspective Mapping) or pixel-tracking algorithms to ascertain speed based on observable physical displacement.
 
-\par Once you have documented some background on the theme you need to focus on three key aspects: \textbf{Data set}; \textbf{Algorithms}; \textbf{Evaluation}. So you need to research existing data sets and document them. Say we want to explore accent recognition in audio/video clips, you would need to identify existing data sets and document first by enumerating then by comparing in a table layout such as in Table~\ref{tab:Data}. A useful tool for creation of tables is Truben's Table Tool\footnote{\url{http://truben.no/table/}}. When enlisting the data sets make sure you provide the proper citation. When comparing you need to identify the key features/factors/variable that are important for your subject matter.
+Conversely, researchers looking at GPS probe data often go for a second, more numbers-driven way of analysing things. Their methodology utilises extensive datasets comprising historical, crowdsourced vehicle trajectories. Instead of conducting real-time physical experiments, their focus is predominantly on statistical modelling, noise mitigation, and using map-matching algorithms to fix those multi-path errors that pop up in city areas.
 
-\begin{enumerate}
-    \item The Accents of the British Isles (ABI-1) Speech Corpus, \cite{d2004accents}
-    \item TIMIT Acoustic-Phonetic Continuous Speech Corpus, \cite{garofalo1993darpa}
-    \item Common Voice Data Set, \cite{common_voice}
-    \item WSJCAM0 Corpus, \cite{robinson1995wsjcamo}
-    \item The Speech Accent Archive, \cite{weinberger2011speech}
-    \item The Arctic CMU Audio Database, \cite{kominek2004cmu}
-    \item VoxCeleb2, \cite{chung2018voxceleb2} 
-\end{enumerate}
+\subsection{Testing Strategies in the Chosen Context}
+To implement these methods, a review of the literature identifies three principal testing strategies utilised by researchers to evaluate speed estimation frameworks.
 
-\begin{table}[ht]
-    \caption{Data-set comparison. Accent: Native (N); Non-Native (NN)}
-    \label{tab:Data}
-    \centering
-    \begin{tabular}{l|l|l|l|l|l}
-        \textbf{Data set} & \textbf{Speakers} & \textbf{Utterances} & \textbf{Accents}   & \textbf{Citations} & \textbf{Type} \\\hline
-        1               & 280               & 855                 & 14                & 28              & N               \\
-        2               & 630               & 6,300               & 8                 & 1,918           & N               \\
-        3               & 50,590            & 644,120             & 16                & N/A             & N \& NN            \\
-        4 & 140 & 4,400 & 4 & 346 & N \\
-        5               & 2,140             & 2,140               & \textgreater{100} & 132             & N \& NN        \\
-        6               & 18                & 1,150               & 4                 & 458             & N \& NN               \\
-        7               & 6,000              & 1,128,246          & 6                 & 168             & N \& NN  
-    \end{tabular}
-\end{table}
+The initial approach is what they call Controlled Closed-Circuit Testing, whereby researchers typically initiate testing within controlled, sterilised environments. They drive their specially equipped vehicles at set speeds around a closed track. This method effectively removes extraneous variables such as traffic occlusion or unpredictable civilian driving behaviour, thereby facilitating a concentrated focus on the mathematical principles underpinning the vision or GPS algorithms.
 
-\par Next you need to provide an overview of what researchers have proposed and their key results. A survey or review paper would be ideal since these kind of papers would cover multiple techniques and provide good comparisons. Returning to our example of \enquote{Automatic cyber-bullying detection} consider the technique comparison documented in Table~\ref{tab:Com}. Note the structure used in this table, first you have the citation of the research, followed by the data set used, then the metric quoted for comparison, finally the relevant result. 
+The second approach is known as `In-The-Wild' Highway Deployment. To check how well it scales, researchers put cameras on busy motorway overpasses. This testing method relies on obtaining a substantial sample size of uninstrumented civilian vehicles. The speed info from the vision system is then compared with big-picture GPS data from third-party companies to see how accurate it is in real-world conditions and how much delay there might be.
 
-\begin{table}[ht]
-    \centering
-    \caption{State of the art results}
-    \label{tab:Com}
-    \resizebox{\columnwidth}{!}{
-        \begin{tabular}{l|l|l|l}
-            \textbf{\textbf{Study}}         & \textbf{\textbf{Data set}}    & \textbf{\textbf{Metrics}} & \textbf{\textbf{Results}}                                                                   \\ \hline
-            \cite{prathyusha2017cyberbully} & Crime Investigation Forum    & F1 Score                  & \begin{tabular}[c]{@{}l@{}}CDMS: 40.75\%\\ CDCSGF: 39.75\%\end{tabular}                     \\ \hline
-            \cite{van2018automatic}         & Corpus for English and Dutch & F1 Score                  & \begin{tabular}[c]{@{}l@{}}English: 64\%\\ Dutch: 61\%\end{tabular}                         \\ \hline
-            \cite{al2016cybercrime}         & Twitter                      & F1 Score                  & 93.6\%                                                                                      \\ \hline
-            \cite{zhong2016content}         & Instagram                    & F1 Score                  & \begin{tabular}[c]{@{}l@{}}SVM Classifier: 95.00\%\\ Image Classifier: 68.08\%\end{tabular} \\ \hline
-            \cite{reynolds2011using}        & Formsrping                   & Accuracy                  & 78.5\%                                                                                      \\ \hline
-            \cite{dinakar2011modeling}      & Youtube                      & Accuracy                  & 66.70\%        \\   \hline        
-        \end{tabular}
-    }
-\end{table}
+The third method involves Synthetic Simulation (Digital Twins). Researchers are progressively utilising advanced rendering engines to artificially produce accurate bounding boxes and tracking data in fake extreme weather scenarios that would be hard to mimic in real life. This methodology serves as an effective means of advancing the mathematical boundaries of speed estimation algorithms.
 
-\par The final recommended part in a good literature review is a review in the evaluation metrics used. It is not possible to cover all possible evaluation metrics but in most cases there is a classification problem, which would require something called a confusion matrix. Consider the problem of recognising and distinguishing an image of a cat from that of a dog. You will have a data set split into training and testing. Both will have the ground truth, what the image is actually showing. This ground truth, in the case of the training data set will be used for the creation of the Artificial Intelligence (AI) model, whilst the ground truth in the testing data set will be used to compare the predicted classification. The predictions are plotted in a confusion matrix as shown in Table~\ref{tab:CatDog}. The same table can be extended to have more than 2 categories such as introducing the mouse category. Then you need to cycle the focus for each category as shown in Table~\ref{tab:CatObjective} and Table~\ref{tab:DogObjective}, then extract the key values namely:
-\begin{enumerate}
-    \item \textbf{True Positives (TP)} - This refers to the correctly predicted positive values i.e. the value of both the actual class and predicted class is yes. 
-    \item \textbf{True Negatives (TN)} - These are the correctly predicted negative values i.e. the value of both actual class and predicted class is no.
-    \item \textbf{False Positives (FP)} - It indicates values where the actual class is no but the predicted class is yes.
-    \item \textbf{False Negatives (FN)} - It indicates values where the actual class is yes but the predicted class in no.
-\end{enumerate}
+\subsection{Experimental Variables and Hypothesis Validation}
+No matter what testing approach you use, researchers need to carefully control and tweak certain experimental variables to prove their ideas. When it comes to independent variables in vision-based studies, they often mess around with the camera angle (pitch and yaw), how far away the camera is from the target, and things like lighting and weather to see how solid the system is. Conversely, in studies involving GPS technology, the primary independent variable manipulated is the `polling rate', defined as the frequency at which the GPS receiver records a coordinate.
 
-\begin{table}
-    \caption{Sample Cat vs Dog Confusion Matrix}
-    \label{tab:CatDog}
-    \centering
-    \begin{tabular}{ll|ll}
-    ~      & ~   & \textbf{Predicted} & ~   \\
-    ~      & ~   & Cat       & Dog \\ \hline
-    \textbf{Actual} & Cat & 33        & 2   \\
-    ~      & Dog & 5         & 30  \\
-    \end{tabular}
-\end{table}
+Accompanying these inputs, the universally measured dependent variable across all studies is the calculated velocity, expressed in kilometres per hour (km/h) or metres per second (m/s), along with the error margin, which they usually measure using Root Mean Square Error (RMSE) or Mean Absolute Percentage Error (MAPE).
 
-\begin{table}
-    \caption{Cat category evaluation metrics}
-    \label{tab:CatObjective}
-    \centering
-    \begin{tabular}{ll|ll}
-    ~      & ~   & \textbf{Predicted} & ~   \\
-    ~      & ~   & Cat       & Not-Cat \\ \hline
-    \textbf{Actual} & Cat & TP        & FN   \\
-    ~      & Not-Cat & FP         & TN  \\
-    \end{tabular}
-\end{table}
+Furthermore, to institute control variables and prove an alternative hypothesis, such as the proposal that a vision-based model shows greater accuracy than conventional GPS. This is usually done by arming test vehicles with super-calibrated Real-Time Kinematic (RTK) GPS or using LiDAR speed guns. Finally, by isolating these variables, researchers can definitively discover the specific parameters under which their speed estimation models remain valid.
 
-\begin{table}
-    \caption{Dog category evaluation metrics}
-    \label{tab:DogObjective}
-    \centering
-    \begin{tabular}{ll|ll}
-    ~      & ~   & \textbf{Predicted} & ~   \\
-    ~      & ~   & Not-Dog       & Dog \\ \hline
-    \textbf{Actual} & Not-Dog & TN        & FP   \\
-    ~      & Dog & FN         & TP  \\
-    \end{tabular}
-\end{table}
+\subsection{Distinguishing Between Academic and Non-Academic Material}
+When we're looking at these variables and methods, it's important to clearly distinguish between well-tested academic research driven by the industry that isn't academically reviewed. Academic material sourced from peer-reviewed journals, these studies offer transparent methods, publicly accessible datasets (such as BrnoCompSpeed), and standard error metrics. They candidly acknowledge limitations, including camera calibration drift and GPS multipath errors.
 
-\par The confusion matrices are used to provide evaluation metrics such as Accuracy, Precision, Recall and F1-Score. Depending on the subject matter being researched the proper metrics need to be quoted, thus the need to research this in academic literature. For a quick but reliable reference you can consider Wikipedia's dedicated page\footnote{\url{https://en.wikipedia.org/wiki/Confusion_matrix}}.
+Non-academic material, such as industry white papers and promotional reports from ITS hardware manufacturers, offer valuable insights into real-world adoption. However, they often lack methodological transparency. Frequently, they present ``best-case scenario'' accuracy figures without sufficiently detailing the experimental constraints, thereby rendering them unsuitable for establishing a scientific baseline.
 
-\begin{enumerate}
-    \item \textbf{Accuracy (ACC)} - This shows the measure of effectiveness of the machine learning model.
-    \begin{equation} 
-     Accuracy (ACC)= \frac{TP + TN}{P + N}
-    \end{equation}
-    \item \textbf{Precision (PPV)} - Precision is the ratio of correctly predicted positive values to the total predicted positive values. This metric highlights the correct positive predictions out of all the positive predictions. High precision indicates low false positive rate.
-    \begin{equation} 
-     Precision (PPV)= \frac{TP}{TP + FP}
-    \end{equation}
-    \item \textbf{Recall (TPR)} - The recall is the ratio of correctly predicted positive values to the actual postive values. Recall highlights the sensitivity of the algorithm i.e. out of all the actual positives how many were caught by the program.
-    \begin{equation} 
-     Recall (TPR)= \frac{TP}{P}
-    \end{equation}
-    
-    \item \textbf{F1 Score} - F1 Score is the weighted average of Precision and Recall. Therefore, this score takes both false positives and false negatives into account. Intuitively it is not as easy to understand as accuracy, but F1 is usually more useful than accuracy, especially if you have an uneven class distribution.
-    \begin{equation} 
-     F1 Score = \frac{2TP}{2TP + FP + FN}
-    \end{equation}
-\end{enumerate}
+\subsection{Recommended Peer-Reviewed Articles}
+The following five peer-reviewed articles establish the methodological foundation for the comparison of vision and GPS techniques, each representing distinct layers of Saunders' Research Onion. 
+
+\cite{macko2025efficient} operate firmly within a positivist paradigm, employing an experimental strategy through the employment of YOLO object detection in conjunction with vanishing point geometry. This study exemplifies contemporary standards for quantitative methodologies and procedures, avoiding reliance solely on fixed road-width assumptions.
+
+Additionally \cite{arabi2022comparison} offer a highly pertinent comparative methodology in their work ``Comparison of the GPS and Camera Distance Estimation''. Their research demonstrates a deductive approach, establishing a rigorous framework for experimental validation by utilising RTK GPS as an infallible ground truth to test alternative hypotheses against monocular camera estimations.
+
+Furthermore, \cite{fernandez2021vision} is integral to its archival research strategy, delineating the methodological evolution in data collection and analysis techniques, from fundamental background subtraction to sophisticated deep learning and optical flow methods.
+
+To effectively contextualise the alternative approach in \cite{do2024enhanced}, this study focuses extensively on the specific techniques and procedures necessary for overseeing the inherent noise and low polling rates characteristic of continuous GPS trajectory data, relying heavily on large-scale cross-sectional data collection.
+
+Lastly, \cite{rahimi2018vehicle} employs a strict monomethod quantitative approach, explicitly detailing the mathematical methodology involving virtual intrusion lines and frame-by-frame displacement. This represents a practical realisation of the innermost layers of the research onion, offering a methodology directly applicable to the development of bounding box prototype designs.
+
+\subsection{Critical Literature Arguments and Knowledge Gaps}
+A critical synthesis of the literature reveals distinct trade-offs between the two methodologies. Vision-based approaches are often praised for their strong localisation and perfect coverage, capturing every passing vehicle. However, the literature frequently disparages these systems for their fragility. Mathematical calibration is readily compromised by camera vibrations, and accuracy diminishes substantially during nighttime or adverse weather conditions.
+
+Conversely, GPS probe data methods are esteemed for their continuous, network-wide coverage and resilience to visual environmental factors. Nonetheless, GPS studies frequently emphasise notable spatial inaccuracies within urban canyon environments, primarily due to signal multipath errors, and these methods are often characterised by low rates.
+
+\subsubsection{Identifying The Knowledge Gap}
+While there's plenty of research looking at vision systems in really controlled settings and GPS on open roads, there's still a big gap when it comes to comparing their performance all at once in busy, complicated city environments. Most studies investigate a single technology while presuming the other to be an infallible ground truth. There is a conspicuous absence of empirical research that rigorously evaluates a hybrid tracking methodology, such as integrating YOLO bounding boxes for primary detection with precise pixel displacement techniques, measured directly against consumer-grade GPS data within a real-world urban bottleneck scenario.
