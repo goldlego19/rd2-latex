@@ -1,4 +1,33 @@
 \section{Reflection on Chosen Methodology}
+\subsection{Research Pipeline}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\columnwidth]{includes/pipeline.png}
+    \caption{Proposed methodology pipeline demonstrating the parallel processing and evaluation of Vision, GPS, and Ground Truth data streams.}
+    \label{fig:pipeline}
+\end{figure}
+
+\subsubsection*{Research Pipeline Summary}
+The methodology uses a parallel processing architecture which is designed to extract, calibrate and independently evaluate data streams. These data streams are aquired from the open-source comma2k19 dataset \cite{schafer2018commute}. The Pipeline is structured into three continuous data tracks that converge for a shared statistical evaluation.
+
+\textbf{1. The Vision-Based Pipeline}\\
+This phase is responsible for translating raw 2D dashcam video frames into velocity. It goes through four stages of processes:
+\begin{itemize}
+    \item \textbf{Region of Interest (ROI) Cropping:} This process isolates any noise or static objects in the frame for example; the vehicle dashboard or the sky. This in turn removes any irrelevant noise.
+    \item \textbf{Dense Optical Flow (Farnebäck):} The Farnebäck algorithm is then applied to the ROI to calculate frame-by-frame pixel intensity displacements, this captures the raw visual motion of the road surface.
+    \item \textbf{Forward Motion Proxy:} The resulting motion vectors is filtered to exclude lateral movement like lane changes and oncoming traffic. This distils the visual data into a single, stable numerical proxy representing forward pixel shift.
+    \item \textbf{Affine Calibration:} Since the proxy represents pixel shift rather than km/h, it ust be scaled dynamically. This phase continuously uses a rolling window of data from the ground truth track to fit and translate the proxy into an estimated vision speed array.
+\end{itemize}
+
+\textbf{2. The Ground Truth Baseline}\\
+The CAN-Bus speed telemetry serves a dual purpose in this methodology. Firstly, it acts as the mathematical anchor during the "Affine Calibration" Phase of the vision pipeline which teaches the algorithm how to translate pixel into physical speed. Secondly, it flows down to the final shared phase, serving as a baseline against which both GPS and Vision based systems are judged and compared.
+
+\textbf{3. The GPS-Based Pipeline}\\
+The Raw GNSS trajectory data is processed to serve as the comparative satellite technology. Since satellite polling rates often flucate and lose accuracy from camera frame rates , this track mainly focuses on Chronological Frame Alignment. The raw GPS data is chronologically aligned to match the timestamps of the video frames. By doing this, we produce an Estimated GPS Speed array, ensuring a strict 1:1 temporal comparision with the camera's perception.
+
+\textbf{4. Shared Process: Experimental Evaluation \& Statistical Analysis}\\
+The Final shared phase of the pipeline is where the outputs of all 3 tracks ; Vision, GPS and the CAN-bus speed are synchronised. Custom Python evaluation scripts are executed to quantify and contrast the performance of the vision and GPS systems. The Accuracy and reliability of each paradigm are determined by calculating error metrics such as Mean Absolute Error (MAE), Root Mean Square Error (RMSE), and by mapping error trends over time to identify specific moments of environmental or systemic failure. This phase is crucial for validating the research hypothesis and drawing conclusions about the comparative performance of the two technologies under real-world conditions.
 \subsection{Research Question}
 To critically assess the prevailing paradigms within Intelligent Transportation Systems (ITS), this research is guided by the following principal research question:
 \begin{itemize}

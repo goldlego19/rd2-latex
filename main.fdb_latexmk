@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1775481208.52072 "main.aux" "main.bbl" "main" 1775481210.16398 0
+["bibtex main"] 1775723089.26279 "main.aux" "main.bbl" "main" 1775723254.72522 0
   "./sources.bib" 1775467236 2666 08f477013c65020a6c6d85e9649036d7 ""
   "C:/Users/gremb/AppData/Local/Programs/MiKTeX/bibtex/bst/ieeetran/IEEEtran.bst" 1440622569 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "main.aux" 1775481209 4543 8026d6659024c5781a23d0bc336d2a21 "pdflatex"
+  "main.aux" 1775723254 5122 a583859a1553a5a1c8cc5eec287516ec "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1775481208.85129 "c:/Users/gremb/Desktop/School/lvl6/lvl3/Sem 2/rd2/main.tex" "main.pdf" "main" 1775481210.16448 0
+["pdflatex"] 1775723253.30909 "c:/Users/gremb/Desktop/School/lvl6/lvl3/Sem 2/rd2/main.tex" "main.pdf" "main" 1775723254.72576 0
   "C:/Users/gremb/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1773733950 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/gremb/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1772707310 13333486 9cd439619891a87ae0b71c4eb059e278 ""
   "C:/Users/gremb/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -78,12 +78,13 @@
   "c:/Users/gremb/Desktop/School/lvl6/lvl3/Sem 2/rd2/main.tex" 1775481206 1448 6ff5db042e42700ee4691a96c72c752e ""
   "includes/02-Introduction.tex" 1772709167 4713 471925ccfdc383d26e47908c0cf21f78 ""
   "includes/03-Literature.tex" 1775481087 8835 e58cb1227e4fb6718ab49cbdd87a9725 ""
-  "includes/04-Methodology.tex" 1775480749 6501 adc9f3d39315e4d6d728824098c2aa1e ""
+  "includes/04-Methodology.tex" 1775723252 10049 261683da490d7b02af1899a0d52b3783 ""
   "includes/literaturemap.png" 1775469620 317067 0a598e8b74174cf8af7fcdcb30209a64 ""
+  "includes/pipeline.png" 1775721037 81213 2a60966d73301a5c2f92b7c73a88c81f ""
   "includes/researchonion.jpg" 1772634890 81608 0673640718ba59620ff4057e3faa162c ""
-  "main.aux" 1775481209 4543 8026d6659024c5781a23d0bc336d2a21 "pdflatex"
-  "main.bbl" 1775481208 4096 da02f67dded84946b389605bbceba2c9 "bibtex main"
-  "main.out" 1775481209 4852 593b3686144a8aece98c560c6e516efa "pdflatex"
+  "main.aux" 1775723254 5122 a583859a1553a5a1c8cc5eec287516ec "pdflatex"
+  "main.bbl" 1775723089 4096 da02f67dded84946b389605bbceba2c9 "bibtex main"
+  "main.out" 1775723254 4998 17935996f8db630409c3f08bac37ae93 "pdflatex"
   "main.tex" 1775481206 1448 6ff5db042e42700ee4691a96c72c752e ""
   (generated)
   "main.aux"
