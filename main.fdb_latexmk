@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1777847574.20357 "main.aux" "main.bbl" "main" 1777847576.73514 0
-  "./sources.bib" 1777847572 4329 ca76685965b147917843271cd08648d4 ""
+["bibtex main"] 1777848810.08559 "main.aux" "main.bbl" "main" 1777848811.98644 0
+  "./sources.bib" 1777848809 14500 6f49436dbca55fa249f71e8826978380 ""
   "C:/Users/Denzel/AppData/Local/Programs/MiKTeX/bibtex/bst/ieeetran/IEEEtran.bst" 1440622569 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "main.aux" 1777847576 8802 c542d1654383440ef49bc475ca11f91e "pdflatex"
+  "main.aux" 1777848811 8802 2b8f095e35fe2624d3aa6c007f2dff61 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1777847574.45734 "c:/Users/Denzel/Desktop/school/lvl6/lvl3sem2/rd2-latex/main.tex" "main.pdf" "main" 1777847576.73573 0
+["pdflatex"] 1777848810.29162 "c:/Users/Denzel/Desktop/school/lvl6/lvl3sem2/rd2-latex/main.tex" "main.pdf" "main" 1777848811.98698 0
   "C:/Users/Denzel/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1777539277 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/Denzel/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1777539210 13333971 a9829bb9d26e2ba4ea894f9b0ba4b053 ""
   "C:/Users/Denzel/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -90,9 +90,9 @@
   "includes/pipeline.png" 1777537094 81213 2a60966d73301a5c2f92b7c73a88c81f ""
   "includes/researchonion.jpg" 1777537094 81608 0673640718ba59620ff4057e3faa162c ""
   "includes/segment_30_fast_vision_evaluation.png" 1772742757 667051 2eaef0e34908f181843e3be95951cac2 ""
-  "main.aux" 1777847576 8802 c542d1654383440ef49bc475ca11f91e "pdflatex"
-  "main.bbl" 1777847574 4263 a28f26bdc8a43620ffe9585448f764ed "bibtex main"
-  "main.out" 1777847576 8950 206a18e11881703e94bd7e74df97bd43 "pdflatex"
+  "main.aux" 1777848811 8802 2b8f095e35fe2624d3aa6c007f2dff61 "pdflatex"
+  "main.bbl" 1777848810 4746 c5b525e00a857925ad9702f950f93cd5 "bibtex main"
+  "main.out" 1777848811 8950 206a18e11881703e94bd7e74df97bd43 "pdflatex"
   "main.tex" 1777834672 1483 9b666da8ffb286d7fab9ac7b22f31152 ""
   (generated)
   "main.aux"

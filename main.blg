@@ -13,46 +13,50 @@ Database file #1: sources.bib
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--edition ordinal word "Ninth edition" may be too high (or improper) for conversion in saunders2019research
+Warning--empty journal in macko2025efficient
+Warning--empty journal in fernandez2021vision
 
 Done.
 You've used 10 entries,
             4087 wiz_defined-function locations,
-            885 strings with 9259 characters,
-and the built_in function-call counts, 5424 in all, are:
-= -- 454
-> -- 127
-< -- 15
-+ -- 60
-- -- 28
-* -- 297
-:= -- 1002
-add.period$ -- 20
+            894 strings with 9729 characters,
+and the built_in function-call counts, 7635 in all, are:
+= -- 635
+> -- 194
+< -- 50
++ -- 100
+- -- 37
+* -- 444
+:= -- 1209
+add.period$ -- 21
 call.type$ -- 10
-change.case$ -- 10
-chr.to.int$ -- 27
-cite$ -- 10
-duplicate$ -- 426
-empty$ -- 433
-format.name$ -- 37
-if$ -- 1185
+change.case$ -- 14
+chr.to.int$ -- 108
+cite$ -- 13
+duplicate$ -- 542
+empty$ -- 560
+format.name$ -- 47
+if$ -- 1723
 int.to.chr$ -- 0
 int.to.str$ -- 10
-missing$ -- 74
-newline$ -- 73
+missing$ -- 100
+newline$ -- 71
 num.names$ -- 10
-pop$ -- 182
+pop$ -- 233
 preamble$ -- 1
 purify$ -- 0
-quote$ -- 2
-skip$ -- 399
+quote$ -- 4
+skip$ -- 565
 stack$ -- 0
-substring$ -- 68
-swap$ -- 278
-text.length$ -- 6
+substring$ -- 271
+swap$ -- 449
+text.length$ -- 14
 text.prefix$ -- 0
 top$ -- 5
 type$ -- 10
-warning$ -- 0
-while$ -- 16
+warning$ -- 3
+while$ -- 28
 width$ -- 12
-write$ -- 137
+write$ -- 142
+(There were 3 warnings)

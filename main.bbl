@@ -23,45 +23,47 @@
 
 \bibitem{cui2003autonomous}
 \BIBentryALTinterwordspacing
-H.~Cui and S.~S. Ge, ``Autonomous vehicle positioning with gps in urban canyon
-  environments,'' \emph{IEEE Transactions on Robotics and Automation}, vol.~19,
-  no.~1, pp. 15--25, 2003. [Online]. Available:
-  \url{https://ieeexplore.ieee.org/document/1177161}
+{Youjing Cui} and {Shuzhi Sam Ge}, ``\BIBforeignlanguage{en}{Autonomous vehicle
+  positioning with gps in urban canyon environments},''
+  \emph{\BIBforeignlanguage{en}{IEEE Transactions on Robotics and Automation}},
+  vol.~19, no.~1, pp. 15--25, Feb. 2003. [Online]. Available:
+  \url{http://ieeexplore.ieee.org/document/1177161/}
 \BIBentrySTDinterwordspacing
 
 \bibitem{li2025statistical}
 \BIBentryALTinterwordspacing
-W.~Li \emph{et~al.}, ``Statistical analysis of gnss multipath errors in urban
-  canyons,'' \emph{IEEE Sensors Journal}, 2025. [Online]. Available:
-  \url{https://ieeexplore.ieee.org/document/11028411}
+M.~Peretic, R.~Gilabert, J.~Carroll, J.~Gutierrez, A.~Moore, J.~Christie, and
+  E.~T. Dill, ``Statistical {Analysis} of {GNSS} {Multipath} {Errors} in
+  {Urban} {Canyons},'' in \emph{2025 {IEEE}/{ION} {Position}, {Location} and
+  {Navigation} {Symposium} ({PLANS})}.\hskip 1em plus 0.5em minus 0.4em\relax
+  Salt Lake City, UT, USA: IEEE, Apr. 2025, pp. 1216--1225. [Online].
+  Available: \url{https://ieeexplore.ieee.org/document/11028411/}
 \BIBentrySTDinterwordspacing
 
 \bibitem{pp2024video}
 \BIBentryALTinterwordspacing
-P.~P. \emph{et~al.}, ``Video-based vehicle speed estimation using speed
-  measurement metrics,'' \emph{IEEE Access}, 2024. [Online]. Available:
+K.~Sangsuwan and M.~Ekpanyapong, ``Video-{Based} {Vehicle} {Speed} {Estimation}
+  {Using} {Speed} {Measurement} {Metrics},'' \emph{IEEE Access}, vol.~12, pp.
+  4845--4858, 2024. [Online]. Available:
   \url{https://ieeexplore.ieee.org/document/10381710/}
 \BIBentrySTDinterwordspacing
 
 \bibitem{saunders2019research}
-\BIBentryALTinterwordspacing
-M.~N.~K. Saunders, P.~Lewis, and A.~Thornhill, \emph{Research Methods for
-  Business Students}, 8th~ed.\hskip 1em plus 0.5em minus 0.4em\relax Harlow,
-  U.K.: Pearson, 2019. [Online]. Available:
-  \url{https://www.researchgate.net/publication/240218229_Research_Methods_for_Business_Students}
-\BIBentrySTDinterwordspacing
+M.~N.~K. Saunders, P.~Lewis, and A.~Thornhill, \emph{Research methods for
+  business students}, ninth edition~ed.\hskip 1em plus 0.5em minus 0.4em\relax
+  Harlow, England ; New York: Pearson, 2023.
 
 \bibitem{schafer2018commute}
 \BIBentryALTinterwordspacing
-H.~Schafer, E.~Santana, A.~Haden, and R.~Biasini, ``A commute in data: The
-  comma2k19 dataset,'' \emph{arXiv preprint arXiv:1812.05752}, 2018. [Online].
-  Available: \url{https://arxiv.org/abs/1812.05752}
+H.~Schafer, E.~Santana, A.~Haden, and R.~Biasini, ``A {Commute} in {Data}:
+  {The} comma2k19 {Dataset},'' 2018, version Number: 1. [Online]. Available:
+  \url{https://arxiv.org/abs/1812.05752}
 \BIBentrySTDinterwordspacing
 
 \bibitem{macko2025efficient}
 \BIBentryALTinterwordspacing
-V.~Macko \emph{et~al.}, ``Efficient vision-based vehicle speed estimation,''
-  \emph{arXiv preprint arXiv:2505.01203}, 2025. [Online]. Available:
+A.~Macko, L.~Gajdošech, and V.~Kocur, ``Efficient {Vision}-based {Vehicle}
+  {Speed} {Estimation},'' 2025, version Number: 1. [Online]. Available:
   \url{https://arxiv.org/abs/2505.01203}
 \BIBentrySTDinterwordspacing
 
@@ -76,24 +78,29 @@ S.~Arabi, A.~Sharma, M.~Reyes, C.~Hamann, and C.~Peek-Asa,
 
 \bibitem{fernandez2021vision}
 \BIBentryALTinterwordspacing
-D.~Fern{\'a}ndez~Llorca, C.~Salinas, M.~Jimenez, and I.~Parra~Alonso,
-  ``Vision-based vehicle speed estimation: A survey,'' \emph{IET Intelligent
-  Transport Systems}, 2021. [Online]. Available:
-  \url{https://www.researchgate.net/publication/348563438_Vision-based_Vehicle_Speed_Estimation_for_ITS_A_Survey}
+D.~F. Llorca, A.~H. Martínez, and I.~G. Daza, ``Vision-based {Vehicle} {Speed}
+  {Estimation}: {A} {Survey},'' 2021, version Number: 2. [Online]. Available:
+  \url{https://arxiv.org/abs/2101.06159}
 \BIBentrySTDinterwordspacing
 
 \bibitem{do2024enhanced}
 \BIBentryALTinterwordspacing
-N.~T. Do, V.~D. Ta, and T.~M. Nguyen, ``Enhanced deep neural networks for
-  traffic speed forecasting using probe data,'' \emph{MDPI}, 2024. [Online].
-  Available: \url{https://www.mdpi.com/2071-1050/16/6/2453}
+V.~M. Do, Q.~H. Tran, K.~G. Le, X.~C. Vuong, and V.~T. Vu,
+  ``\BIBforeignlanguage{en}{Enhanced {Deep} {Neural} {Networks} for {Traffic}
+  {Speed} {Forecasting} {Regarding} {Sustainable} {Traffic} {Management}
+  {Using} {Probe} {Data} from {Registered} {Transport} {Vehicles} on
+  {Multilane} {Roads}},'' \emph{\BIBforeignlanguage{en}{Sustainability}},
+  vol.~16, no.~6, p. 2453, Mar. 2024. [Online]. Available:
+  \url{https://www.mdpi.com/2071-1050/16/6/2453}
 \BIBentrySTDinterwordspacing
 
 \bibitem{rahimi2018vehicle}
 \BIBentryALTinterwordspacing
-A.~Rahimi, ``Vehicle speed measurement model for video-based systems,''
-  \emph{Diva-Portal}, 2018. [Online]. Available:
-  \url{http://www.diva-portal.org/smash/get/diva2:1258002/FULLTEXT01.pdf}
+S.~Javadi, M.~Dahl, and M.~I. Pettersson, ``\BIBforeignlanguage{en}{Vehicle
+  speed measurement model for video-based systems},''
+  \emph{\BIBforeignlanguage{en}{Computers \& Electrical Engineering}}, vol.~76,
+  pp. 238--248, Jun. 2019. [Online]. Available:
+  \url{https://linkinghub.elsevier.com/retrieve/pii/S0045790618317774}
 \BIBentrySTDinterwordspacing
 
 \end{thebibliography}
