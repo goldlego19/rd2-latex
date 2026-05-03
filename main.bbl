@@ -67,9 +67,11 @@ V.~Macko \emph{et~al.}, ``Efficient vision-based vehicle speed estimation,''
 
 \bibitem{arabi2022comparison}
 \BIBentryALTinterwordspacing
-A.~Arabi, A.~Haghighat, and C.~Jacob, ``Comparison of the gps and camera
-  distance estimation,'' \emph{Sensors}, 2022. [Online]. Available:
-  \url{https://stacks.cdc.gov/view/cdc/229918}
+S.~Arabi, A.~Sharma, M.~Reyes, C.~Hamann, and C.~Peek-Asa,
+  ``\BIBforeignlanguage{en}{Farm {Vehicle} {Following} {Distance} {Estimation}
+  {Using} {Deep} {Learning} and {Monocular} {Camera} {Images}},''
+  \emph{\BIBforeignlanguage{en}{Sensors}}, vol.~22, no.~7, p. 2736, Apr. 2022.
+  [Online]. Available: \url{https://www.mdpi.com/1424-8220/22/7/2736}
 \BIBentrySTDinterwordspacing
 
 \bibitem{fernandez2021vision}
