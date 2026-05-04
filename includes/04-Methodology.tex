@@ -5,12 +5,14 @@
 \begin{figure}[H]
     \centering
     \includegraphics[width=\columnwidth]{includes/pipeline.png}
-    \caption{Proposed methodology pipeline demonstrating the parallel processing and evaluation of Vision, GPS, and Ground Truth data streams. Github Repository: \url{https://github.com/goldlego19/rd2}}
+    \caption{Proposed methodology pipeline demonstrating the parallel processing and evaluation of Vision, GPS, and Ground Truth data streams.}
     \label{fig:pipeline}
 \end{figure}
 
+
+
 \subsubsection*{Research Pipeline Summary}
-The methodology uses a parallel processing architecture which is designed to extract, calibrate and independently evaluate data streams. These data streams are aquired from the open-source comma2k19 dataset \cite{schafer2018commute}. The Pipeline is structured into three continuous data tracks that converge for a shared statistical evaluation.
+The methodology uses a parallel processing architecture which is designed to extract, calibrate and independently evaluate data streams. These data streams are aquired from the open-source comma2k19 dataset \cite{schafer2018commute}. The Pipeline is structured into three continuous data tracks that converge for a shared statistical evaluation.\footnote{Github Repository: \url{https://github.com/goldlego19/rd2}}
 
 \textbf{1. The Vision-Based Pipeline}\\
 This phase is responsible for translating raw 2D dashcam video frames into velocity. It goes through four stages of processes:
